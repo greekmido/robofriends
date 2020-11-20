@@ -7,6 +7,17 @@ class Error extends Component{
            hasError:false
        }
     }
+    componentDidCatch(){
+        this.setState({hasError:true})
+    }
+    render(){
+
+        if (this.state.hasError){
+           return <h1> ops something went wrong</h1>
+        }else {
+                return this.props.children
+        }
+            }
 }
 
 export default Error

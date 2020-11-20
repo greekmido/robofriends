@@ -5,6 +5,7 @@ import CardList from "./CardList";
 import { robots } from "./robots";
 import SearchBox from "./searchbox";
 import Scroll from "./scroll.js"
+import Error from "./errorboundary.js"
 class App extends Component{
   
   constructor(){
@@ -25,7 +26,9 @@ class App extends Component{
         <h1 className="f1">ROBO FRIENDS</h1>
         <SearchBox onsearching={this.whenSearchChanges}  />
         <Scroll>
+          <Error>
         <CardList robots={this.state.robots} term={this.state.searchboxvalue} />
+        </Error>
         </Scroll>
       </div>
     )
