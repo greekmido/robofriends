@@ -1,7 +1,7 @@
 {
   "name": "robofriends",
   "version": "0.1.0",
-  "homepage": "http://68.183.38.174/robofriends/build/index.html",
+  "homepage": "./robofriends/build",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
